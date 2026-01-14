@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url(./images/bg-intro-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+}
+
+body {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    margin: 5.5rem 2rem;
+    text-align: center;
+}
+
+.call-to-action {
+    margin: 2rem 0 1rem;
+    background-color: hsl(248, 32%, 49%);
+    padding: 0.8rem 4rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 5px 12px 0 hsl(249, 10%, 26%);
+    font-weight: 200;
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
