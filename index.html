@@ -1,35 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <title>Frontend Mentor | Intro component with sign up form</title>
-</head>
-<body>
-  <h2>Learn to code by watching others</h2>
-  <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. </p>
-  <div class="call-to-action"><strong>Try it free 7 days</strong> then $20/mo. thereafter</div>
-  <form action="">
-    <label for="first-name"></label>
-    <input type="text" placeholder="First Name">
-    <input type="text" placeholder="Last Name">
-    <input type="email" placeholder="Email Address">
-    <input type="password" placeholder="Password">
-    <button>Claim your free trial </button>
-    <p>By clicking the button, you are agreeing to our Terms and Services</p>
-  </form>
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Matthias</a>.
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <h2>Learn to code by watching others</h2>
+    <p>
+      See how experienced developers solve problems in real-time. Watching
+      scripted tutorials is great, but understanding how developers think is
+      invaluable.
     </p>
-  </footer>
-</body>
+    <div class="call-to-action">
+      <strong>Try it free 7 days</strong> then $20/mo. thereafter
+    </div>
+    <form action="">
+      <input type="text" placeholder="First Name" class="form-item" />
+      <input type="text" placeholder="Last Name" class="form-item" />
+      <input type="email" placeholder="Email Address" class="form-item" />
+      <input type="password" placeholder="Password" class="form-item" />
+      <button class="form-item">Claim your free trial</button>
+      <p>
+        By clicking the button, you are agreeing to our
+        <strong>Terms and Services</strong>
+      </p>
+    </form>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Matthias</a>.
+      </p>
+    </footer>
+  </body>
 </html>

@@ -1,31 +1,76 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    background-image: url(./images/bg-intro-mobile.png);
-    background-color: hsl(0, 100%, 74%);
+  background-image: url(./images/bg-intro-mobile.png);
+  background-color: hsl(0, 100%, 74%);
 }
 
 body {
-    color: white;
-    font-family: "Poppins", sans-serif;
-    margin: 5.5rem 2rem;
-    text-align: center;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 5.5rem 2rem;
+  text-align: center;
 }
 
 .call-to-action {
-    margin: 2rem 0 1rem;
-    background-color: hsl(248, 32%, 49%);
-    padding: 0.8rem 4rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 5px 12px 0 hsl(249, 10%, 26%);
-    font-weight: 200;
+  margin: 2rem 0 1rem;
+  background-color: hsl(248, 32%, 49%);
+  padding: 0.8rem 4rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 12px 0 hsl(249, 10%, 26%);
+  font-weight: 200;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
 
+form {
+  background: white;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
 
+.form-item {
+  height: 2.5rem;
+  border-radius: 0.2rem;
+  border: 1px solid hsla(0, 0%, 50%, 0.19);
+}
 
+form > input {
+  color: hsl(249, 10%, 26%);
+  font-weight: bold;
 
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+}
+
+form > button {
+  background-color: hsl(154, 59%, 51%);
+  text-transform: uppercase;
+  color: white;
+}
+
+form > p {
+  color: hsla(0, 0%, 50%, 0.5);
+  height: 2.5rem;
+  width: 80%;
+  font-size: x-small;
+  align-self: center;
+}
+
+p > strong {
+  color: hsl(0, 100%, 74%);
+}
+
+footer {
+  margin-top: 5rem;
+}
