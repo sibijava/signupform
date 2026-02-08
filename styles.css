@@ -43,14 +43,40 @@ form {
   height: 2.5rem;
   border-radius: 0.2rem;
   border: 1px solid hsla(0, 0%, 50%, 0.19);
+  position: relative;
+  margin-top: 1rem;
 }
 
-form > input {
+input {
   color: hsl(249, 10%, 26%);
   font-weight: bold;
-
-  margin-bottom: 1rem;
+  border: inherit;
+  /* margin-top: 1rem; */
   padding: 0.8rem;
+  width: 100%;
+}
+
+.error-image {
+  position: absolute;
+  right: 15px;
+  top: 22px;
+  height: auto;
+  width: 20px;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.empty-error-message {
+  color: hsl(0, 100%, 74%);
+  margin-top: 8px;
+  text-align: end;
+  font-size: 8px;
+  display: none;
+}
+
+.invalid {
+  border: 1px solid hsl(0, 100%, 74%);
+  color: hsl(0, 100%, 74%);
 }
 
 form > button {
@@ -58,6 +84,7 @@ form > button {
   text-transform: uppercase;
   color: white;
   cursor: pointer;
+  margin-top: 1rem;
 }
 
 form > p {
@@ -84,6 +111,8 @@ footer {
   body {
     display: flex;
     padding: 3rem;
+    height: 70%;
+    margin: 15% 5%;
   }
 
   h2 {
@@ -92,12 +121,12 @@ footer {
   }
 
   .intro-message__section {
-    width: 70%;
+    width: 60%;
     padding: 8rem;
     text-align: start;
   }
 
   .signup-section {
-    width: 50%;
+    width: 40%;
   }
 }
