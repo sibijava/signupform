@@ -14,14 +14,13 @@ const lastNameErrorImage = document.querySelector(".last-name-error__img");
 const emailErrorImage = document.querySelector(".email-error__img");
 const passwordErrorImage = document.querySelector(".password-error__img");
 
-console.log(password.value.length);
-console.log(email.validity.valid);
-console.log(password);
+console.log(firstName.placeholder);
 
 firstName.addEventListener("input", () => {
   if (firstName.value.length < 1) {
     firstName.classList.add("invalid");
     firstNameError.style.display = "block";
+    firstName.placeholder = "";
     firstNameErrorImage.style.display = "block";
   } else {
     firstName.classList.remove("invalid");
@@ -34,6 +33,7 @@ lastName.addEventListener("input", () => {
   if (lastName.value.length < 1) {
     lastName.classList.add("invalid");
     lastNameError.style.display = "block";
+    lastName.placeholder = "";
     lastNameErrorImage.style.display = "block";
   } else {
     lastName.classList.remove("invalid");
@@ -43,11 +43,10 @@ lastName.addEventListener("input", () => {
 });
 
 email.addEventListener("input", () => {
-  if (email.value.length < 1) {
+  if (!email.validity.valid) {
     email.classList.add("invalid");
     emailError.style.display = "block";
     emailErrorImage.style.display = "block";
-    console.log(email.validity.valid);
   } else {
     email.classList.remove("invalid");
     emailError.style.display = "none";
@@ -60,6 +59,7 @@ password.addEventListener("input", () => {
   if (password.value.length < 1) {
     password.classList.add("invalid");
     passwordError.style.display = "block";
+    password.placeholder = "";
     passwordErrorImage.style.display = "block";
   } else {
     password.classList.remove("invalid");
