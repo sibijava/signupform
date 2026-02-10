@@ -51,12 +51,14 @@ input {
   color: hsl(249, 10%, 26%);
   font-weight: bold;
   border: inherit;
-  /* margin-top: 1rem; */
   padding: 0.8rem;
   width: 100%;
 }
 
-.error-image {
+.first-name-error__img,
+.last-name-error__img,
+.email-error__img,
+.password-error__img {
   position: absolute;
   right: 15px;
   top: 22px;
@@ -66,7 +68,10 @@ input {
   display: none;
 }
 
-.empty-error-message {
+.first-name-error,
+.last-name-error,
+.email-error,
+.password-error {
   color: hsl(0, 100%, 74%);
   margin-top: 8px;
   text-align: end;
