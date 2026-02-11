@@ -1,5 +1,3 @@
-console.log("This is Sparta!!!");
-
 const firstName = document.getElementById("first-name");
 const lastName = document.getElementById("last-name");
 const email = document.getElementById("email");
@@ -13,8 +11,6 @@ const firstNameErrorImage = document.querySelector(".first-name-error__img");
 const lastNameErrorImage = document.querySelector(".last-name-error__img");
 const emailErrorImage = document.querySelector(".email-error__img");
 const passwordErrorImage = document.querySelector(".password-error__img");
-
-console.log(firstName.placeholder);
 
 firstName.addEventListener("input", () => {
   if (firstName.value.length < 1) {
@@ -44,14 +40,19 @@ lastName.addEventListener("input", () => {
 
 email.addEventListener("input", () => {
   if (!email.validity.valid) {
-    email.classList.add("invalid");
-    emailError.style.display = "block";
-    emailErrorImage.style.display = "block";
+    if (email.value.length < 1) {
+      email.placeholder = "";
+      emailError.textContent = "Email cannot be empty";
+    } else {
+      emailError.textContent = "Looks like this is not an email";
+      email.classList.add("invalid");
+      emailError.style.display = "block";
+      emailErrorImage.style.display = "block";
+    }
   } else {
     email.classList.remove("invalid");
     emailError.style.display = "none";
     emailErrorImage.style.display = "none";
-    console.log(email.validity.valid);
   }
 });
 
@@ -69,5 +70,16 @@ password.addEventListener("input", () => {
 });
 
 button.addEventListener("click", () => {
-  console.log("this was clicked!!!");
+  if (
+    firstName.validity.valid &&
+    lastName.validity.valid &&
+    email.validity.valid &&
+    password.validity.valid
+  ) {
+    alert("Thank you for signing up!!!");
+  } else {
+    alert(
+      "Please fill out the form properly with valid information. All fields are required!",
+    );
+  }
 });
